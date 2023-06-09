@@ -3,4 +3,14 @@
 import os
 
 print(os.getcwd() + '/second.test')
-open(os.getcwd() + '/second.test', 'w').write('hello jianlong')
+with open(os.getcwd() + '/second.test', 'r') as f:
+# f.write('hello jianlong')
+# f.seek(0)
+    result = f.read()
+    print(result)
+    print('-------')
+    f.seek(0)
+    results = f.readlines()
+    print(results)
+    print(f.name)
+print(f.closed)
