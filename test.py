@@ -19,3 +19,10 @@ print(str4)
 
 set2 = set([1, 2, 3, 4])
 print(set2)
+
+list_teest1 = {1: {"name": "jianlong"}, 3: {"name": "jianlong"}, 11: {"name": "jianlong"},
+               22: {"name": "jianlong"}}
+result=json.dumps(list_teest1)
+
+print(json.loads(result))
+

@@ -20,3 +20,7 @@ print(vars(jianlong))
 print(hasattr(jianlong, 'sex'))
 log = ColorLogger()
 log.info(str(vars(jianlong)))
+
+ss = ['1', '2', '3,4', 4, 5]
+for i in enumerate(ss):
+    print(i)
