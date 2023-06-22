@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 # Auther : jianlong
+import json
+
+
 class Course(object):
     def __init__(self, no, name, teacher=None):
         self.no = no
@@ -14,4 +17,4 @@ class Course(object):
 
     def str(self):
         course_dect = {'课程名称': self.name, '教师名称': self.teacher.name}
-        return str(course_dect)
+        return course_dect

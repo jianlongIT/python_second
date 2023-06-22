@@ -12,13 +12,15 @@ def introduction(str):
     is_student = create_student()
     c_t = course_to_teacher()
     second_title = '******' + str + '选课结果' + '** ** **'
-    for i in range(0, 8):
+    for i in range(len(is_student)):
         if i == 0:
             print(first_title)
-        is_student[i].add_course(c_t[7 - i])
+        is_student[i].add_course(c_t[len(is_student) - 1 - i])
+        if i == 2:
+            is_student[i].add_course(c_t[3])
         print(is_student[i].str())
     print(second_title)
-    for k in range(0, 8):
+    for k in range(len(is_student)):
         print(is_student[k].course_detail())
 
 
@@ -61,7 +63,7 @@ def create_teacher():
 def create_student():
     students = []
     s_str = "小亮, 小明, 李红, 小丽, Jone, 小彤, 小K, 慕慕".split(', ')
-    for i in range(0, 8):
+    for i in range(len(s_str)):
         no = random.randint(1000, 1007)
         name = s_str[i]
         student = Student(no, name)
@@ -73,7 +75,7 @@ def course_to_teacher():
     lists = []
     ls_course = prepare_course()
     ls_teacher = create_teacher()
-    for i in range(0, 8):
+    for i in range(len(ls_course)):
         ls_course[i].binding(ls_teacher[i])
         lists.append(ls_course[i])
     return lists
