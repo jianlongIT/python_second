@@ -1,0 +1,45 @@
+{
+  "jianlong": {
+    "username": "jianlong",
+    "role": "admin",
+    "active": true,
+    "create_time": 1687606999.584152,
+    "update_time": 1687607066.6302888,
+    "gifts": []
+  },
+  "jianlong2": {
+    "username": "jianlong2",
+    "role": "admin",
+    "active": true,
+    "create_time": 1688302047.6729789,
+    "update_time": 1688302047.6729789,
+    "gifts": []
+  },
+  "jianlong3": {
+    "username": "jianlong3",
+    "role": "normal",
+    "active": true,
+    "create_time": 1688302192.863652,
+    "update_time": 1689089912.395416,
+    "gifts": [
+      "Mac mini",
+      "mac",
+      "iPad",
+      "iPad",
+      "watch",
+      "iPhone",
+      "iPhone",
+      "iPhone",
+      "iPhone",
+      "iPhone",
+      "Mac",
+      "Mac",
+      "iPhone",
+      "Mac",
+      "Mac",
+      "Mac",
+      "iPhone",
+      "Watch"
+    ]
+  }
+}
